@@ -75,4 +75,4 @@ def quiz():
     
     return render_template('quiz_form.html')
 
-app.run(host = "0.0.0.0", port = 80)
+app.run(host = "0.0.0.0", port = 8080)
