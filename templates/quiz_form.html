@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <title>Quiz</title>
+    <link rel="stylesheet" href="static/styles_quiz.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Simple Quiz</h2>
+        <form action="/quiz" method="POST">
+            <label>1. Fill in the blank: The sun rises in the _____.</label>
+            <input type="text" name="fill_blank" required>
+            
+            <label>2. What is the capital of India?</label>
+            <label><input type="radio" name="mcq" value="a" required> Mumbai </label>
+            <label><input type="radio" name="mcq" value="b" required> Delhi </label>
+            <label><input type="radio" name="mcq" value="c" required> Banglore </label>
+            <label><input type="radio" name="mcq" value="d" required> Kolkata </label>
+            
+            <label>3. Select all correct options for even numbers:</label>
+            <label><input type="checkbox" name="checkbox" value="a"> 2</label>
+            <label><input type="checkbox" name="checkbox" value="b"> 3</label>
+            <label><input type="checkbox" name="checkbox" value="c"> 5</label>
+            <label><input type="checkbox" name="checkbox" value="d"> 8</label>
+            
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+</body>
+</html>
